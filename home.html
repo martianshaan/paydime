@@ -1,0 +1,1149 @@
+<body class="antialiased text-gray-800 min-h-screen flex flex-col">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+       Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="relative z-50 bg-white dark:bg-gray-900">
+      <!-- Header content goes here -->
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content" class="flex-1 relative ">
+      <!-- Content will be injected here -->
+    </main>
+
+ 
+<htmlcode>
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 transition-all duration-300 shadow-lg bg-opacity-95">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+              <!-- Logo -->
+              <div class="flex-shrink-0">
+                  <a href="#" class="text-2xl font-bold text-white">Paydime</a>
+              </div>
+
+              <!-- Desktop Menu -->
+              <div class="hidden md:block">
+                  <div class="ml-10 flex items-center space-x-8">
+                      <a href="#features" class="text-gray-300 hover:text-lime-400 transition-colors">Features</a>
+                      <a href="#users" class="text-gray-300 hover:text-lime-400 transition-colors">Our Users</a>
+                      <div class="relative group">
+                          <button class="text-gray-300 hover:text-lime-400 transition-colors flex items-center">
+                              Community
+                              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                              </svg>
+                          </button>
+                      </div>
+                      <a href="#login" class="text-gray-300 hover:text-lime-400 transition-colors">Log In</a>
+                      <a href="#getstarted" class="bg-lime-400 text-neutral-900 px-4 py-2 rounded-md font-medium hover:bg-lime-500 transition-colors">
+                          Get Winden
+                      </a>
+                  </div>
+              </div>
+
+              <!-- Mobile menu button -->
+              <div class="md:hidden">
+                  <button id="mobile-menu-button" class="text-gray-400 hover:text-white focus:outline-none">
+                      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-neutral-800">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+              <a href="#features" class="block px-3 py-2 text-gray-300 hover:text-lime-400 transition-colors">Features</a>
+              <a href="#users" class="block px-3 py-2 text-gray-300 hover:text-lime-400 transition-colors">Our Users</a>
+              <a href="#community" class="block px-3 py-2 text-gray-300 hover:text-lime-400 transition-colors">Community</a>
+              <a href="#login" class="block px-3 py-2 text-gray-300 hover:text-lime-400 transition-colors">Log In</a>
+              <a href="#getstarted" class="block px-3 py-2 bg-lime-400 text-neutral-900 rounded-md font-medium hover:bg-lime-500 transition-colors text-center">
+                  Get Winden
+              </a>
+          </div>
+      </div>
+  </nav>
+
+  <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+      });
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', () => {
+          const navbar = document.getElementById('navbar');
+          if (window.scrollY > 0) {
+              navbar.classList.add('shadow-lg');
+              navbar.classList.add('bg-opacity-95');
+          } else {
+              navbar.classList.remove('shadow-lg');
+              navbar.classList.remove('bg-opacity-95');
+          }
+      });
+  </script>
+</div>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="hero" class="relative min-h-[70vh] bg-gradient-to-br from-neutral-900 to-neutral-800 overflow-hidden">
+      <!-- Background gradient effect -->
+      <div class="absolute inset-0 bg-gradient-to-r from-lime-400/10 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <!-- Left Content -->
+              <div class="z-10 animate__animated animate__fadeInLeft" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                  <h1 class="text-6xl font-bold text-white mb-6 leading-tight">
+                      Save more<br>everyday
+                  </h1>
+                  <p class="text-xl text-gray-300 mb-8">
+                      Business banking, custom tools,<br>savings and community.
+                  </p>
+                  <div class="mb-12">
+                      <a href="#" class="inline-block bg-black text-white px-8 py-4 rounded-md hover:bg-neutral-800 transition-colors duration-300">
+                          Get Winden - for Free
+                      </a>
+                  </div>
+                  <div class="flex flex-col space-y-3">
+                      <div class="flex -space-x-2">
+                          <div class="w-8 h-8 rounded-full bg-neutral-600"></div>
+                          <div class="w-8 h-8 rounded-full bg-neutral-500"></div>
+                          <div class="w-8 h-8 rounded-full bg-neutral-400"></div>
+                          <div class="w-8 h-8 rounded-full bg-neutral-300"></div>
+                          <div class="w-8 h-8 rounded-full bg-neutral-200"></div>
+                          <div class="w-8 h-8 rounded-full bg-neutral-100"></div>
+                      </div>
+                      <p class="text-sm text-gray-400">used every day by hundreds</p>
+                  </div>
+              </div>
+
+              <!-- Right Content - Cards Display -->
+              <div class="relative z-10 animate__animated animate__fadeInRight" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                  <div class="relative">
+                      <!-- Black Card -->
+                      <div class="absolute transform rotate-12 translate-x-20 -translate-y-10 animate-float">
+                          <div class="w-64 h-40 bg-black rounded-xl shadow-2xl flex items-center justify-center">
+                              <div class="text-white">
+                                  <div class="text-2xl font-bold">Winden</div>
+                                  <div class="text-white/50 text-sm">VISA</div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Green Card -->
+                      <div class="absolute transform -rotate-6 translate-x-40 translate-y-20 animate-float">
+                          <div class="w-64 h-40 bg-lime-400 rounded-xl shadow-2xl flex items-center justify-center">
+                              <div class="text-black">
+                                  <div class="text-2xl font-bold">Winden</div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Decorative Elements -->
+                      <div class="absolute bottom-0 right-0 w-16 h-16 bg-white rounded-full shadow-lg"></div>
+                      <div class="absolute top-20 right-20 w-20 h-20 bg-neutral-800 rounded-lg shadow-xl"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Decorative gradient overlay -->
+      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-neutral-900 to-transparent"></div>
+  </section>
+</div>
+
+<style>
+  @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+  }
+
+  .animate-float {
+      animation: float 6s ease-in-out infinite;
+  }
+</style>
+
+<script>
+  // Add floating animation to cards
+  document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.transform');
+      cards.forEach(card => {
+          card.classList.add('animate-float');
+      });
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="features" class="py-20 bg-neutral-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center mb-16 animate__animated animate__fadeIn" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+              <h2 class="text-4xl font-bold text-neutral-900 mb-4">Banking that works for you</h2>
+              <p class="text-xl text-neutral-600">Powerful features to help your business grow</p>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Feature 1 -->
+              <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                  <div class="bg-lime-400 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                      <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-900 mb-3">Smart Banking</h3>
+                  <p class="text-neutral-600">Automated tools and insights to manage your business finances efficiently</p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s; opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                  <div class="bg-lime-400 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                      <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-900 mb-3">Custom Tools</h3>
+                  <p class="text-neutral-600">Personalized solutions tailored to your specific business needs</p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s; opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                  <div class="bg-lime-400 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                      <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-900 mb-3">Community</h3>
+                  <p class="text-neutral-600">Connect with other businesses and grow together</p>
+              </div>
+          </div>
+
+          <!-- Stats Section -->
+          <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 bg-neutral-900 rounded-2xl p-12 animate__animated animate__fadeIn" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+              <div class="text-center">
+                  <div class="text-4xl font-bold text-lime-400 mb-2">100K+</div>
+                  <p class="text-white">Active Users</p>
+              </div>
+              <div class="text-center">
+                  <div class="text-4xl font-bold text-lime-400 mb-2">$500M+</div>
+                  <p class="text-white">Transactions</p>
+              </div>
+              <div class="text-center">
+                  <div class="text-4xl font-bold text-lime-400 mb-2">99.9%</div>
+                  <p class="text-white">Uptime</p>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animation
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      element.style.opacity = "0";
+      element.style.transform = "translateY(20px)";
+      element.style.transition = "all 0.6s ease-out";
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="cardShowcase" class="py-24 bg-neutral-900 relative overflow-hidden">
+      <!-- Gradient Background Effect -->
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <!-- Left Content -->
+              <div class="animate__animated animate__fadeInLeft">
+                  <h2 class="text-4xl font-bold text-white mb-8">Premium Cards for Every Need</h2>
+                  <div class="space-y-6">
+                      <!-- Card Feature 1 -->
+                      <div class="flex items-start space-x-4">
+                          <div class="w-10 h-10 rounded-lg bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-white mb-2">Enhanced Security</h3>
+                              <p class="text-gray-400">Advanced protection features for worry-free transactions</p>
+                          </div>
+                      </div>
+
+                      <!-- Card Feature 2 -->
+                      <div class="flex items-start space-x-4">
+                          <div class="w-10 h-10 rounded-lg bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-white mb-2">Cashback Rewards</h3>
+                              <p class="text-gray-400">Earn rewards on every purchase you make</p>
+                          </div>
+                      </div>
+
+                      <!-- Card Feature 3 -->
+                      <div class="flex items-start space-x-4">
+                          <div class="w-10 h-10 rounded-lg bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-white mb-2">Global Acceptance</h3>
+                              <p class="text-gray-400">Use your card anywhere in the world</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Right Content - 3D Card Display -->
+              <div class="relative h-[400px] animate__animated animate__fadeInRight">
+                  <!-- Black Card -->
+                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-12 hover:rotate-0 transition-transform duration-300 animate-float">
+                      <div class="w-72 h-44 bg-black rounded-xl shadow-2xl flex flex-col justify-between p-6">
+                          <div class="flex justify-between items-start">
+                              <div class="text-white text-xl font-bold">Winden</div>
+                              <div class="text-white opacity-80">VISA</div>
+                          </div>
+                          <div class="text-white opacity-80">**** **** **** 1234</div>
+                      </div>
+                  </div>
+
+                  <!-- Green Card -->
+                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-12 translate-x-20 hover:rotate-0 transition-transform duration-300 animate-float">
+                      <div class="w-72 h-44 bg-lime-400 rounded-xl shadow-2xl flex flex-col justify-between p-6">
+                          <div class="flex justify-between items-start">
+                              <div class="text-neutral-900 text-xl font-bold">Winden</div>
+                              <div class="text-neutral-900">mastercard</div>
+                          </div>
+                          <div class="text-neutral-900">**** **** **** 5678</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Decorative Elements -->
+      <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-neutral-900 to-transparent"></div>
+  </section>
+</div>
+
+<script>
+  // Add hover effect to cards
+  const cards = document.querySelectorAll('.w-72');
+  cards.forEach(card => {
+      card.addEventListener('mouseover', () => {
+          card.style.transform = 'scale(1.05) rotate(0deg)';
+          card.style.zIndex = '10';
+      });
+      card.addEventListener('mouseout', () => {
+          card.style.transform = '';
+          card.style.zIndex = '';
+      });
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="businessTools" class="py-24 bg-neutral-50 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900 mb-4">Powerful Business Tools</h2>
+              <p class="text-xl text-neutral-600">Everything you need to manage and grow your business</p>
+          </div>
+
+          <!-- Tools Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Tool Card 1 -->
+              <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                  <div class="h-12 w-12 bg-lime-400 rounded-xl mb-6 flex items-center justify-center">
+                      <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-900 mb-3">Financial Analytics</h3>
+                  <p class="text-neutral-600 mb-4">Real-time insights into your business performance and cash flow</p>
+                  <a href="#" class="text-lime-600 font-semibold hover:text-lime-700 flex items-center">
+                      Learn more
+                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                  </a>
+              </div>
+
+              <!-- Tool Card 2 -->
+              <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                  <div class="h-12 w-12 bg-lime-400 rounded-xl mb-6 flex items-center justify-center">
+                      <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-900 mb-3">Payment Processing</h3>
+                  <p class="text-neutral-600 mb-4">Secure and seamless payment solutions for your business</p>
+                  <a href="#" class="text-lime-600 font-semibold hover:text-lime-700 flex items-center">
+                      Learn more
+                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                  </a>
+              </div>
+
+              <!-- Tool Card 3 -->
+              <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                  <div class="h-12 w-12 bg-lime-400 rounded-xl mb-6 flex items-center justify-center">
+                      <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                      </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-900 mb-3">Team Management</h3>
+                  <p class="text-neutral-600 mb-4">Collaborate and manage your team with advanced tools</p>
+                  <a href="#" class="text-lime-600 font-semibold hover:text-lime-700 flex items-center">
+                      Learn more
+                      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="mt-16 text-center">
+              <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-neutral-900 hover:bg-neutral-800 transition-colors duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+                  Explore All Tools
+              </a>
+          </div>
+      </div>
+
+      <!-- Background Decorative Elements -->
+      <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-lime-400/10 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-lime-400/10 to-transparent"></div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animation
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('animate__animated');
+              entry.target.classList.add('animate__fadeInUp');
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="savings" class="py-24 bg-neutral-900 relative overflow-hidden">
+      <!-- Gradient overlays -->
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <!-- Left Content -->
+              <div class="animate__animated animate__fadeInLeft">
+                  <h2 class="text-5xl font-bold text-white mb-8">Smart savings for smarter business</h2>
+                  
+                  <!-- Savings Features -->
+                  <div class="space-y-8">
+                      <div class="flex items-start space-x-4">
+                          <div class="w-12 h-12 rounded-xl bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-white mb-2">High-Yield Business Savings</h3>
+                              <p class="text-gray-400">Earn more with competitive interest rates on your business savings</p>
+                          </div>
+                      </div>
+
+                      <div class="flex items-start space-x-4">
+                          <div class="w-12 h-12 rounded-xl bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-white mb-2">Automated Savings Tools</h3>
+                              <p class="text-gray-400">Set and forget with smart automation features</p>
+                          </div>
+                      </div>
+
+                      <div class="flex items-start space-x-4">
+                          <div class="w-12 h-12 rounded-xl bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-white mb-2">Growth Analytics</h3>
+                              <p class="text-gray-400">Track and optimize your savings with real-time insights</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- CTA Button -->
+                  <div class="mt-12">
+                      <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-neutral-900 bg-lime-400 hover:bg-lime-500 transition-colors duration-300">
+                          Start Saving Now
+                          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+
+              <!-- Right Content - Savings Visualization -->
+              <div class="relative animate__animated animate__fadeInRight">
+                  <div class="relative h-[500px] flex items-center justify-center">
+                      <!-- Savings Graph -->
+                      <div class="absolute w-80 h-80 bg-neutral-800 rounded-2xl shadow-xl transform rotate-6 hover:rotate-0 transition-transform duration-300 animate-float">
+                          <div class="p-6">
+                              <div class="h-full flex flex-col justify-between">
+                                  <div class="text-lime-400 text-2xl font-bold">Annual Savings</div>
+                                  <div class="flex-grow relative mt-4">
+                                      <div class="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-lime-400/20 to-transparent rounded-lg"></div>
+                                  </div>
+                                  <div class="text-white text-4xl font-bold">$24,500</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animations
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="community" class="py-24 bg-neutral-50 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900 mb-4">Join Our Growing Community</h2>
+              <p class="text-xl text-neutral-600">Connect with thousands of businesses worldwide</p>
+          </div>
+
+          <!-- Community Stats -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div class="bg-white p-8 rounded-2xl shadow-lg text-center animate__animated animate__fadeInUp">
+                  <div class="text-4xl font-bold text-neutral-900 mb-2">50K+</div>
+                  <p class="text-neutral-600">Active Members</p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl shadow-lg text-center animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                  <div class="text-4xl font-bold text-neutral-900 mb-2">120+</div>
+                  <p class="text-neutral-600">Countries</p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl shadow-lg text-center animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                  <div class="text-4xl font-bold text-neutral-900 mb-2">$2B+</div>
+                  <p class="text-neutral-600">Transactions</p>
+              </div>
+          </div>
+
+          <!-- Community Features -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div class="animate__animated animate__fadeInLeft">
+                  <div class="space-y-8">
+                      <div class="flex items-start space-x-4">
+                          <div class="w-12 h-12 rounded-xl bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-neutral-900 mb-2">Network &amp; Collaborate</h3>
+                              <p class="text-neutral-600">Connect with like-minded business owners</p>
+                          </div>
+                      </div>
+
+                      <div class="flex items-start space-x-4">
+                          <div class="w-12 h-12 rounded-xl bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-neutral-900 mb-2">Share Resources</h3>
+                              <p class="text-neutral-600">Access shared tools and knowledge base</p>
+                          </div>
+                      </div>
+
+                      <div class="flex items-start space-x-4">
+                          <div class="w-12 h-12 rounded-xl bg-lime-400 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-6 h-6 text-neutral-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                              </svg>
+                          </div>
+                          <div>
+                              <h3 class="text-xl font-semibold text-neutral-900 mb-2">Live Events</h3>
+                              <p class="text-neutral-600">Attend exclusive webinars and meetups</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Community Visualization -->
+              <div class="relative animate__animated animate__fadeInRight">
+                  <div class="grid grid-cols-3 gap-4">
+                      <div class="w-12 h-12 bg-neutral-200 rounded-full"></div>
+                      <div class="w-12 h-12 bg-neutral-300 rounded-full"></div>
+                      <div class="w-12 h-12 bg-neutral-400 rounded-full"></div>
+                      <div class="w-12 h-12 bg-neutral-500 rounded-full"></div>
+                      <div class="w-12 h-12 bg-neutral-600 rounded-full"></div>
+                      <div class="w-12 h-12 bg-neutral-700 rounded-full"></div>
+                  </div>
+                  <p class="text-sm text-neutral-600 mt-4">used every day by hundreds</p>
+              </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="mt-16 text-center">
+              <a href="#" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-neutral-900 hover:bg-neutral-800 transition-colors duration-300">
+                  Join the Community
+                  <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+              </a>
+          </div>
+      </div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animations
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="testimonials" class="py-24 bg-neutral-900 relative overflow-hidden">
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-white mb-4">Trusted by Businesses Worldwide</h2>
+              <p class="text-xl text-gray-400">See what our community has to say</p>
+          </div>
+
+          <!-- Testimonials Slider -->
+          <div class="testimonial-slider relative">
+              <div class="swiper-container">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      <!-- Testimonial 1 -->
+                      <div class="bg-neutral-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                          <div class="flex items-center justify-between mb-6">
+                              <div class="flex items-center space-x-4">
+                                  <div class="w-12 h-12 rounded-full bg-lime-400 flex items-center justify-center">
+                                      <span class="text-neutral-900 font-bold text-lg">GP</span>
+                                  </div>
+                                  <div>
+                                      <h4 class="text-white font-semibold">Google Pay</h4>
+                                      <p class="text-gray-400">Financial Tech</p>
+                                  </div>
+                              </div>
+                              <div class="text-lime-400">
+                                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"></path>
+                                  </svg>
+                              </div>
+                          </div>
+                          <p class="text-gray-300 mb-6">"Winden has transformed how we manage our business finances. The automation tools are incredible."</p>
+                          <div class="flex items-center text-lime-400">
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                          </div>
+                      </div>
+
+                      <!-- Testimonial 2 -->
+                      <div class="bg-neutral-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                          <div class="flex items-center justify-between mb-6">
+                              <div class="flex items-center space-x-4">
+                                  <div class="w-12 h-12 rounded-full bg-lime-400 flex items-center justify-center">
+                                      <span class="text-neutral-900 font-bold text-lg">MC</span>
+                                  </div>
+                                  <div>
+                                      <h4 class="text-white font-semibold">MasterCard</h4>
+                                      <p class="text-gray-400">Payment Solutions</p>
+                                  </div>
+                              </div>
+                              <div class="text-lime-400">
+                                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"></path>
+                                  </svg>
+                              </div>
+                          </div>
+                          <p class="text-gray-300 mb-6">"The integration capabilities and community support have been game-changing for our business growth."</p>
+                          <div class="flex items-center text-lime-400">
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                          </div>
+                      </div>
+
+                      <!-- Testimonial 3 -->
+                      <div class="bg-neutral-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                          <div class="flex items-center justify-between mb-6">
+                              <div class="flex items-center space-x-4">
+                                  <div class="w-12 h-12 rounded-full bg-lime-400 flex items-center justify-center">
+                                      <span class="text-neutral-900 font-bold text-lg">VS</span>
+                                  </div>
+                                  <div>
+                                      <h4 class="text-white font-semibold">Visa</h4>
+                                      <p class="text-gray-400">Financial Services</p>
+                                  </div>
+                              </div>
+                              <div class="text-lime-400">
+                                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM21.41 6.34l-3.75-3.75-2.53 2.54 3.75 3.75 2.53-2.54z"></path>
+                                  </svg>
+                              </div>
+                          </div>
+                          <p class="text-gray-300 mb-6">"The security features and ease of use make Winden the perfect solution for our payment processing needs."</p>
+                          <div class="flex items-center text-lime-400">
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animations
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="pricing" class="py-24 bg-neutral-50 relative overflow-hidden">
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center mb-16 animate__animated animate__fadeIn">
+              <h2 class="text-4xl font-bold text-neutral-900 mb-4">Simple, Transparent Pricing</h2>
+              <p class="text-xl text-neutral-600">Choose the perfect plan for your business</p>
+          </div>
+
+          <!-- Pricing Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Starter Plan -->
+              <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp">
+                  <div class="text-center mb-8">
+                      <h3 class="text-2xl font-bold text-neutral-900 mb-4">Starter</h3>
+                      <div class="flex justify-center items-baseline mb-4">
+                          <span class="text-5xl font-extrabold text-neutral-900">$0</span>
+                          <span class="text-neutral-600 ml-2">/month</span>
+                      </div>
+                      <p class="text-neutral-600">Perfect for small businesses</p>
+                  </div>
+                  <ul class="space-y-4 mb-8">
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Basic banking features
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          2 team members
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Basic analytics
+                      </li>
+                  </ul>
+                  <button class="w-full py-3 px-6 text-neutral-900 font-medium bg-neutral-100 rounded-lg hover:bg-neutral-200 transition-colors duration-300">
+                      Get Started Free
+                  </button>
+              </div>
+
+              <!-- Professional Plan -->
+              <div class="bg-neutral-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform scale-105 animate__animated animate__fadeInUp animate-float" style="animation-delay: 0.2s">
+                  <div class="absolute top-0 right-0 bg-lime-400 text-neutral-900 px-3 py-1 rounded-tr-lg rounded-bl-lg text-sm font-semibold">
+                      Popular
+                  </div>
+                  <div class="text-center mb-8">
+                      <h3 class="text-2xl font-bold text-white mb-4">Professional</h3>
+                      <div class="flex justify-center items-baseline mb-4">
+                          <span class="text-5xl font-extrabold text-white">$49</span>
+                          <span class="text-gray-400 ml-2">/month</span>
+                      </div>
+                      <p class="text-gray-400">For growing businesses</p>
+                  </div>
+                  <ul class="space-y-4 mb-8 text-gray-300">
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          All Starter features
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Unlimited team members
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Advanced analytics
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Priority support
+                      </li>
+                  </ul>
+                  <button class="w-full py-3 px-6 text-neutral-900 font-medium bg-lime-400 rounded-lg hover:bg-lime-500 transition-colors duration-300">
+                      Get Started
+                  </button>
+              </div>
+
+              <!-- Enterprise Plan -->
+              <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                  <div class="text-center mb-8">
+                      <h3 class="text-2xl font-bold text-neutral-900 mb-4">Enterprise</h3>
+                      <div class="flex justify-center items-baseline mb-4">
+                          <span class="text-5xl font-extrabold text-neutral-900">$199</span>
+                          <span class="text-neutral-600 ml-2">/month</span>
+                      </div>
+                      <p class="text-neutral-600">For large organizations</p>
+                  </div>
+                  <ul class="space-y-4 mb-8">
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          All Professional features
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Custom integrations
+                      </li>
+                      <li class="flex items-center">
+                          <svg class="w-5 h-5 text-lime-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          Dedicated support
+                      </li>
+                  </ul>
+                  <button class="w-full py-3 px-6 text-neutral-900 font-medium bg-neutral-100 rounded-lg hover:bg-neutral-200 transition-colors duration-300">
+                      Contact Sales
+                  </button>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animations
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <section id="cta" class="py-24 bg-neutral-900 relative overflow-hidden">
+      <!-- Gradient overlays -->
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="flex flex-col items-center text-center">
+              <!-- Main CTA Content -->
+              <div class="max-w-3xl mx-auto mb-12 animate__animated animate__fadeIn">
+                  <h2 class="text-5xl font-bold text-white mb-6">Start saving with Winden today</h2>
+                  <p class="text-xl text-gray-400 mb-8">Join thousands of businesses already managing their finances smarter</p>
+                  
+                  <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                      <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-neutral-900 bg-lime-400 hover:bg-lime-500 transition-colors duration-300 animate__animated animate__fadeInUp">
+                          Get Started - Free
+                          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                          </svg>
+                      </a>
+                      <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-gray-600 text-lg font-medium rounded-lg text-white hover:bg-neutral-800 transition-colors duration-300 animate__animated animate__fadeInUp">
+                          Contact Sales
+                      </a>
+                  </div>
+
+                  <!-- Trust Indicators -->
+                  <div class="flex flex-col items-center space-y-4 animate__animated animate__fadeIn">
+                      <div class="flex -space-x-2">
+                          <div class="w-10 h-10 rounded-full bg-neutral-600"></div>
+                          <div class="w-10 h-10 rounded-full bg-neutral-500"></div>
+                          <div class="w-10 h-10 rounded-full bg-neutral-400"></div>
+                          <div class="w-10 h-10 rounded-full bg-neutral-300"></div>
+                          <div class="w-10 h-10 rounded-full bg-neutral-200"></div>
+                      </div>
+                      <p class="text-gray-400">Trusted by hundreds of businesses worldwide</p>
+                      
+                      <div class="flex items-center space-x-2 text-gray-400">
+                          <svg class="w-5 h-5 text-lime-400" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                          </svg>
+                          <span>4.9/5 average rating</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Decorative Elements -->
+      <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+  </section>
+</div>
+
+<script>
+  // Intersection Observer for animations
+  const observerOptions = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+          }
+      });
+  }, observerOptions);
+
+  document.querySelectorAll('.animate__animated').forEach((element) => {
+      observer.observe(element);
+  });
+</script>
+</htmlcode><htmlcode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 relative overflow-hidden">
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Main Footer Content -->
+          <div class="pt-16 pb-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                  <!-- Brand Column -->
+                  <div class="lg:col-span-2">
+                      <div class="mb-6">
+                          <a href="#" class="text-2xl font-bold text-white">Paydime</a>
+                      </div>
+                      <p class="text-gray-400 mb-6 max-w-sm">Business banking, custom tools, savings and community. Everything you need to grow your business.</p>
+                      <div class="flex space-x-4">
+                          <a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">
+                              <span class="sr-only">Twitter</span>
+                              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                              </svg>
+                          </a>
+                          <a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">
+                              <span class="sr-only">LinkedIn</span>
+                              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Products -->
+                  <div>
+                      <h3 class="text-white font-semibold mb-4">Products</h3>
+                      <ul class="space-y-3">
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Banking</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Cards</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Savings</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Business Tools</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Company -->
+                  <div>
+                      <h3 class="text-white font-semibold mb-4">Company</h3>
+                      <ul class="space-y-3">
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">About</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Careers</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Press</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Contact</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Resources -->
+                  <div>
+                      <h3 class="text-white font-semibold mb-4">Resources</h3>
+                      <ul class="space-y-3">
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Blog</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Help Center</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Community</a></li>
+                          <li><a href="#" class="text-gray-400 hover:text-lime-400 transition-colors">Developers</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div class="border-t border-gray-800 py-8 mt-12">
+              <div class="flex flex-col md:flex-row justify-between items-center">
+                  <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                      © 2024 Winden. All rights reserved.
+                  </div>
+                  <div class="flex space-x-6">
+                      <a href="#" class="text-gray-400 hover:text-lime-400 text-sm transition-colors">Privacy Policy</a>
+                      <a href="#" class="text-gray-400 hover:text-lime-400 text-sm transition-colors">Terms of Service</a>
+                      <a href="#" class="text-gray-400 hover:text-lime-400 text-sm transition-colors">Cookies</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+</htmlcode><svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body>
